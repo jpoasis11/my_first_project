@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Adobe font -->
+    <script>
+        (function(d) {
+            var config = {
+            kitId: 'tfn2hxu',
+            scriptTimeout: 3000,
+            async: true
+            },
+            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
+    <!-- /Adobe font -->
+    <title>PIZZERIA handmade WITH LOVE</title>
+</head>
+<body>
+<header>
+    <img src="./images/logo.svg" alt="">>
+
+    <nav>
+        <ul>
+            <li><a href="#">お知らせ</a>
+            </li>
+            <li><a href="#">クーポン</a>
+            </li>
+            <li><a href="#">メニュー</a>
+            </li>
+            <li><a href="#">店舗検索</a></li>
+        </ul>
+    </nav>
+    <button></button>
+    <script>
+        document.querySelector('button').addEventListener('click', function(){
+            document.querySelector('header').classList.toggle('active');
+        });
+    </script>
+</header>
+
+<main>
+    <div class="hero">
+        <p><img src="./images/logo2.png" alt="bakery"></p>
+        <div class="swiper swiper-1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/slide-01.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/slide-02.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/slide-03.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <section id="sec1">
+        <h2>NEW</h2>
+        <div class="linecenter"></div>
+        <ul class="lay1">
+            <li><img src="./images/thumb-01.jpg" alt="">
+                <p>当店人気のトマトピザ。トマトたっぷりで、ベーコンやチー
+                    ズとの相性が抜群です。</p></li>
+            
+            <li>
+                <img src="./images/thumb-02.jpg" alt="">
+                <p>夏にぴったりのオリーブピザ。オリーブたっぷりで、ベー
+                    コンやなすとの相性が抜群です。</p>
+            </li>
+        </ul>
+        
+    </section>
+</main>
+<footer>
+    <h1></h1>
+</footer>
+
+</body>
+</html>
